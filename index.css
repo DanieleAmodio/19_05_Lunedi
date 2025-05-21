@@ -52,9 +52,22 @@ nav img {
 
 .dropdown-menu {
     position: relative;
-    left: -496%;
-}
 
+}
+@media screen {
+    .dropdown-menu[data-bs-popper] {
+        left: -130px;
+    }
+
+    .dropdown-toggle::after {
+        color: white;
+        position: absolute;
+        right: 12px;
+        font-size: 15px;
+        top: 25px;
+    }
+
+}
 @media screen and (min-width: 340px) and (max-width: 430px) {
     .sezioneNavDx {
         width: 41%;
@@ -72,14 +85,16 @@ nav img {
         margin-left: 0;
     }
 
+    .dropdown-toggle::after {
+        right: 71px;
+    }
 }
-
 @media screen and (min-width: 431px) and (max-width: 520px) {
     .sezioneNavDx {
         width: 35%;
         height: 10%;
         gap: 10%;
-         position: relative;
+        position: relative;
         left: 40px;
     }
 
@@ -92,8 +107,13 @@ nav img {
 
         margin-left: 0;
     }
-}
 
+    .dropdown-toggle::after {
+        right: -8px;
+        top: 12px;
+    }
+
+}
 @media screen and (min-width: 521px) and (max-width: 600px) {
 
     .sezioneNavDx {
@@ -112,6 +132,10 @@ nav img {
     nav img {
 
         margin-left: 0;
+    }
+    .dropdown-toggle::after {
+        right: -12px;
+        top: 12px;
     }
 }
 @media screen and (min-width: 601px) and (max-width: 680px) {
@@ -133,6 +157,10 @@ nav img {
 
         margin-left: 0;
     }
+    .dropdown-toggle::after {
+        right: -12px;
+        top: 12px;
+    }
 }
 @media screen and (min-width: 681px) and (max-width: 768px) {
 
@@ -153,14 +181,55 @@ nav img {
 
         margin-left: 0;
     }
-}
 
-@media screen and (min-width: 769px) {
-    .navbar-expand-lg .navbar-toggler {
+    .dropdown-toggle::after {
+        right: -14px;
+        top: 12px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .sezioneNavDx {
+        width: 22%;
+        order: 3;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+
+    }
+
+    .navbar-toggler {
         display: none;
     }
 
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-item {
+        padding: 8px;
+    }
+
+    .dropdown-toggle::after {
+        right: 3px;
+        top: 23px;
+    }
+}
+@media screen and (min-width: 992px) {
     .sezioneNavDx {
         order: 3;
+    }
+
+    .dropdown-toggle::after {
+        right: 4px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .dropdown-toggle::after {
+        right: 12px;
     }
 }
