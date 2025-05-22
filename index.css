@@ -2,6 +2,19 @@ body {
     background-color: #141414;
 }
 
+header {
+    height: 110px;
+}
+
+header h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 5%;
+    margin-bottom: 0;
+
+
+}
+
 nav {
     width: 100%;
     height: 60px;
@@ -44,6 +57,7 @@ nav img {
     width: 10%;
     height: 10%;
     justify-content: space-around;
+    margin-right: 2%;
 }
 
 .size {
@@ -52,8 +66,62 @@ nav img {
 
 .dropdown-menu {
     position: relative;
-
 }
+
+.sottoNav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.boxH1Div {
+    display: flex;
+    width: inherit;
+    gap: 3%;
+    align-items: center;
+}
+
+.genere {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #3d3c3c;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    color: white;
+    font-size: small;
+    justify-content: space-around;
+}
+
+.triangolo {
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid white;
+    margin-left: 3px;
+}
+
+.boxIcon {
+    display: flex;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #3d3c3c;
+    font-size: 20px;
+    gap: 20%;
+    margin-right: 3%;
+    align-items: center;
+    color: #3d3c3c;
+    cursor: pointer;
+}
+.sel:hover{
+    color: white;
+    }
+
+
+
+
 @media screen {
     .dropdown-menu[data-bs-popper] {
         left: -130px;
@@ -68,6 +136,7 @@ nav img {
     }
 
 }
+
 @media screen and (min-width: 340px) and (max-width: 430px) {
     .sezioneNavDx {
         width: 41%;
@@ -86,9 +155,10 @@ nav img {
     }
 
     .dropdown-toggle::after {
-        right: 71px;
+        right: 93px;
     }
 }
+
 @media screen and (min-width: 431px) and (max-width: 520px) {
     .sezioneNavDx {
         width: 35%;
@@ -114,6 +184,7 @@ nav img {
     }
 
 }
+
 @media screen and (min-width: 521px) and (max-width: 600px) {
 
     .sezioneNavDx {
@@ -133,11 +204,13 @@ nav img {
 
         margin-left: 0;
     }
+
     .dropdown-toggle::after {
         right: -12px;
         top: 12px;
     }
 }
+
 @media screen and (min-width: 601px) and (max-width: 680px) {
 
     .sezioneNavDx {
@@ -157,11 +230,13 @@ nav img {
 
         margin-left: 0;
     }
+
     .dropdown-toggle::after {
         right: -12px;
         top: 12px;
     }
 }
+
 @media screen and (min-width: 681px) and (max-width: 768px) {
 
     .sezioneNavDx {
@@ -187,6 +262,7 @@ nav img {
         top: 12px;
     }
 }
+
 @media screen and (min-width: 769px) and (max-width: 991px) {
     .sezioneNavDx {
         width: 22%;
@@ -215,21 +291,23 @@ nav img {
     }
 
     .dropdown-toggle::after {
-        right: 3px;
+        right: 11px;
         top: 23px;
     }
 }
+
 @media screen and (min-width: 992px) {
     .sezioneNavDx {
         order: 3;
     }
 
     .dropdown-toggle::after {
-        right: 4px;
+        right: 20px;
     }
 }
+
 @media screen and (min-width: 1500px) {
     .dropdown-toggle::after {
-        right: 12px;
+        right: 40px;
     }
 }
