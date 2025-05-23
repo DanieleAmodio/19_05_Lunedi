@@ -109,16 +109,48 @@ nav img {
     height: 30px;
     border: 1px solid #3d3c3c;
     font-size: 20px;
-    gap: 20%;
     margin-right: 3%;
     align-items: center;
     color: #3d3c3c;
     cursor: pointer;
 }
-.sel:hover{
-    color: white;
-    }
 
+.boxIcon button {
+    background: none;
+    color: #3d3c3c;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boxIcon button:hover,
+button:focus {
+    color: #6d6d6d;
+}
+
+main h2 {
+    font-size: 25px;
+    color: white;
+    margin-left: 82px;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+.row{
+    margin-left: -11%;
+    padding-left: 0;
+    padding-right: 1px;
+    flex-wrap: nowrap;
+}
+.row>*{
+    padding-left: 0;
+    padding-right: 0;
+}
+ 
+.col{
+    flex: 0 0 0%;
+}
+.carousel-control-next,.carousel-control-prev,.carousel-control-next:hover,.carousel-control-prev:hover{
+    opacity: 0;
+}
 
 
 
